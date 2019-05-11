@@ -1,0 +1,94 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript ID3 Reader</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" th:href="@{css/bootstrap.min.css}" />
+	<link rel="stylesheet" href="../../css/bootstrap.min.css" />
+  
+
+	</head>
+
+	<body>
+		<table border="0" cellspacing="0" cellpatding="0">
+			<tr>
+				<td></td>
+				<td colspan="2">请选择你的音乐文件：
+					<!--<script>
+						if(typeof FileReader === "undefined") document.write('<span class="warning">[Not supported by your browser]</span>')
+					</script>-->
+					<input type="file" id="file" onchange="load(this)" accept="audio/mpeg,video/x-ms-wmv">
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td>封面：</td>
+				<td><img id="art" width="50px" height="50px" src="" hidden></td>
+			</tr>
+			<tr>
+				<td>歌手：</td>
+				<td id="artist"></td>
+			</tr>
+			<tr>
+				<td>歌名：</td>
+				<td id="title"></td>
+			</tr>
+			<tr>
+				<td>唱片：</td>
+				<td id="album"></td>
+			</tr>
+			<!--<tr>
+				<td>年份：</td>
+				<td id="year"></td>
+			</tr>-->
+			<!--<tr>
+				<td>评论：</td>
+				<td id="comment"></td>
+			</tr>
+			<tr>
+				<td>类型：</td>
+				<td id="genre"></td>
+			</tr>
+			<tr>
+				<td>Track：</td>
+				<td id="track"></td>
+			</tr>-->
+			<tr>
+				<td>歌词：</td>
+				<td id="lyric"></td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td colspan="2">
+					&nbsp;
+					<audio id="audio" src="" controls=""  loop="loop" autoplay="autoplay"></audio>
+				</td>
+			</tr>
+		</table>
+	</body>
+	
+	<!-- 该解析a标签参数并设置audio的src的 js代码需放在下面，否则会设置不成功 -->
+	<script type="text/javascript">
+//		alert("aa")
+		
+	</script>
+
+	<script type="text/javascript" th:src="@{js/jquery.min.js}"></script>
+	<script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+	<script type="text/javascript" th:src="@{js/id3-minimized.js}"></script>
+	<script type="text/javascript" th:src="@{js/loadMusicDetail.js}"></script>
+	<script type="text/javascript" th:src="@{js/loadMusicDetail2.js}"></script>
+
+	<script type="text/javascript" src="../../static/js/jquery.min.js" ></script>
+	<script type="text/javascript" src="../../static/js/bootstrap.min.js" ></script>
+    <script src="../../static/js/id3-minimized.js" type="text/javascript"></script>
+	<script src="../../static/js/loadMusicDetail.js" type="text/javascript"></script>
+	<script src="../../static/js/loadMusicDetail2.js" type="text/javascript"></script>
+</html>
+

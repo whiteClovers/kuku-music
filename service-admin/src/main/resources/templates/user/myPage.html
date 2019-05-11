@@ -1,0 +1,143 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Bootstrap 101 Template</title>
+
+		<div th:include="common/header::style"></div>
+
+		<!--<link rel="stylesheet" th:href="@{css/bootstrap.min.css}" />-->
+		<!--<script type="text/javascript" th:src="@{js/jquery.min.js}"></script>-->
+		<!--<script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>-->
+
+		<!--<link rel="stylesheet" href="../../static/css/bootstrap.min.css" />-->
+		<!--<script type="text/javascript" src="../../static/js/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="../../static/js/bootstrap.min.js"></script>-->
+
+	</head>
+	
+	<style>
+		.container{
+			width: 700px;
+			margin-top: 40px;
+		}
+		
+		.list-group img{
+			/*width: 120px;
+            height:120px;*/
+            /*margin-left: 30px;*/
+
+            margin-bottom:30px;
+		}
+		
+		.perPic{
+			width: 120px;
+            height:120px;
+            float: left;
+		}
+		
+		.rightHand{
+			margin-left: 30px;
+		}
+		
+		hr{
+			border: solid 0.5px gainsboro;
+		}
+		
+		.perDes{
+			margin-left: 126px;
+		}
+	</style>
+	
+	<body>
+		<!-- 个人基本信息描述 -->
+		<div class="container">
+			<div class="leftHand"><img src="../../static/img/perpic_01.jpg" class="perPic" id="perPic"/></div>
+		    <div class="rightHand">
+		    	<span class="spDes" style="margin-left: 35px;">trebolco</span>
+		    	<span class="spDes" style="margin-left: 10px;">男/女</span>
+		    	<button class="btn btn-default" style="margin-left: 270px;">编辑个人资料</button>
+		    	<hr style="width: 480px;margin-left: 125px;"></hr>
+		    	<p class="perDes">所在地区：江西省抚州市</p><span></span>
+		    	<p class="perDes">年龄：95后</p>
+		    </div>
+
+		</div>
+		
+		
+		<!-- 我的歌单 -->
+		<div class="list-group container">
+			<h4>
+				我创建的歌单
+			</h4>
+			<hr/>
+			<a href="../music/songSheetDetail.html">
+				<img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+    		</a>
+			<a href="../music/songSheetDetail.html">
+                <img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+            </a>
+			<a href="../music/songSheetDetail.html">
+                <img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+            </a>
+			<a href="../music/songSheetDetail.html">
+            <img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+            </a>
+			<a href="../music/songSheetDetail.html">
+            <img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+            </a>
+			<a href="../music/songSheetDetail.html">
+            <img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+            </a>
+			<a href="../music/songSheetDetail.html">
+            <img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+            </a>
+			<a href="../music/songSheetDetail.html">
+            <img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+            </a>
+
+		</div>
+		
+		<!-- 收藏歌单 -->
+		<div class="list-group container">
+			<h4>
+				我收藏的歌单
+			</h4>
+			<hr/>
+			<a href="../music/songSheetDetail.html">
+				<img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+			</a>
+			<a href="../music/songSheetDetail.html">
+				<img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+			</a>
+			<a href="../music/songSheetDetail.html">
+				<img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+			</a>
+			<a href="../music/songSheetDetail.html">
+				<img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+			</a>
+			<a href="../music/songSheetDetail.html">
+				<img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+			</a>
+			<a href="../music/songSheetDetail.html">
+				<img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+			</a>
+			<a href="../music/songSheetDetail.html">
+				<img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+			</a>
+			<a href="../music/songSheetDetail.html">
+				<img src="../../static/img/perpic_03.jpg" alt="..." class="img-rounded songSheet col-sm-3">
+			</a>
+
+		</div>
+		
+	</body>
+	
+	<script>
+		
+	</script>
+</html>

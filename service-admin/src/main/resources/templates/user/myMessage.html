@@ -1,0 +1,74 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 101 Template</title>
+
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}" />
+    <script type="text/javascript" th:src="@{js/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css" />
+    <script type="text/javascript" src="../../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../static/js/bootstrap.min.js"></script>
+
+</head>
+
+<style>
+    .leftDao {
+        margin-left: 50px;
+
+    }
+    .message{
+        margin-left: 40px;
+    }
+</style>
+
+<body>
+<div class="container" style="width: 800px;">
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <colgroup>
+                <col class="col-xs-2">
+                <col class="col-xs-7">
+            </colgroup>
+            <thead>
+            <tr>
+                <th><span class="message">我的消息</span></th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">
+                    <a href="#"><span class="leftDao">私信</span></a>
+                </th>
+                <td>没有收到任何用户的私信哟</td>
+            </tr>
+
+            <tr>
+                <th scope="row">
+                    <a href="#"><span class="leftDao">评论</span></a>
+                </th>
+                <td>没有收到任何评论信息哟</td>
+            </tr>
+
+            <tr>
+                <th scope="row">
+                    <a href="#"><span class="leftDao">通知</span></a>
+                </th>
+                <td>系统暂时没有通知</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+
+</html>

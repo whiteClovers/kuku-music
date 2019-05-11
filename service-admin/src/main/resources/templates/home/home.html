@@ -1,0 +1,124 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap 101 Template</title>
+
+		<div th:include="common/header::style"></div>
+
+	</head>
+
+	<body>
+	<div class="all">
+        <div th:replace="common/header :: header"></div>
+
+		<!-- 轮播图 -->
+		<div class="container con2">
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）指标 -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<a href="javascript:void(0)" onclick="openWin('../../static/music/于文文 - 体面.mp3',this)" class="">
+							<img src="../../static/img/carouselPic_02.jpg" th:src="@{img/carouselPic_02.jpg}" alt="First slide" class="img-responsive center-block picLun">
+						</a>
+					</div>
+					<div class="item">
+                        <a href="javascript:void(0)" onclick="openWin('../../static/music/于文文 - 体面.mp3',this)" class="">
+                            <img src="../../static/img/carouselPic_03.jpg" th:src="@{img/carouselPic_03.jpg}" alt="First slide" class="img-responsive center-block picLun">
+                        </a>
+					</div>
+					<div class="item">
+                        <a href="javascript:void(0)" onclick="openWin('../../static/music/于文文 - 体面.mp3',this)" class="">
+                            <img src="../../static/img/carouselPic_04.jpg" th:src="@{img/carouselPic_04.jpg}" alt="First slide" class="img-responsive center-block picLun">
+                        </a>
+					</div>
+					<div class="item">
+                        <a href="javascript:void(0)" onclick="openWin('../../static/music/于文文 - 体面.mp3',this)" class="">
+                            <img src="../../static/img/carouselPic_05.jpg" th:src="@{img/carouselPic_05.jpg}" alt="First slide" class="img-responsive center-block picLun">
+                        </a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- 热门歌曲 -->
+        <div class="list-group container">
+			<h3>
+				热门歌曲
+			</h3>
+			<hr/>
+			<a href="javascript:void(0)" onclick="openWin('../../static/music/于文文 - 体面.mp3',this)" class="list-group-item">于文文 - 体面</a>
+			<a href="javascript:void(0)" onclick="openWin('../../static/music/孙燕姿 - 我怀念的.mp3',this)" class="list-group-item">孙燕姿 - 我怀念的</a>
+			<a href="javascript:void(0)" onclick="openWin('../../static/music/Asher Book - Here With You.mp3',this)" class="list-group-item">Asher Book - Here With You</a>
+			<a href="javascript:void(0)" onclick="openWin('../../static/music/何洁 - 小永远.mp3',this)" class="list-group-item">何洁 - 小永远</a>
+
+			<a href="javascript:void(0)" onclick="openWin('../../static/music/Akie秋绘 - Lemon.mp3',this)" class="list-group-item">Akie秋绘 - Lemon</a>
+			<a href="javascript:void(0)" onclick="openWin('../../static/music/Anthem Lights - As Long as You Love Me.mp3',this)" class="list-group-item">Anthem Lights - As Long as You Love Me</a>
+			<a href="javascript:void(0)" onclick="openWin('../../static/music/徐秉龙 桃十五 - 青柠.mp3',this)" class="list-group-item">徐秉龙 桃十五 - 青柠</a>
+			<a href="javascript:void(0)" onclick="openWin('../../static/music/尤长靖 - 昨日青空.mp3',this)" class="list-group-item">尤长靖 - 昨日青空</a>
+    	</div>
+
+		<!-- 热门歌单 -->
+		<div class="list-group container">
+			<h3>
+				热门歌单
+			</h3>
+        	<hr/>
+			<a href="../music/songSheetDetail.html" target="_blank">
+				<img src="../../static/img/perpic_03.jpg" th:src="@{img/perpic_03.jpg}" alt="..." class="img-rounded songSheet">
+    		</a>
+			<a href="../music/songSheetDetail.html" target="_blank">
+                <img src="../../static/img/perpic_03.jpg" th:src="@{img/perpic_03.jpg}" alt="..." class="img-rounded songSheet">
+            </a>
+			<a href="../music/songSheetDetail.html" target="_blank">
+                <img src="../../static/img/perpic_03.jpg" th:src="@{img/perpic_03.jpg}" alt="..." class="img-rounded songSheet">
+            </a>
+			<a href="../music/songSheetDetail.html" target="_blank">
+            <img src="../../static/img/perpic_03.jpg" th:src="@{img/perpic_03.jpg}" alt="..." class="img-rounded songSheet">
+            </a>
+			<a href="../music/songSheetDetail.html" target="_blank">
+            <img src="../../static/img/perpic_03.jpg" th:src="@{img/perpic_03.jpg}" alt="..." class="img-rounded songSheet">
+            </a>
+			<a href="../music/songSheetDetail.html" target="_blank">
+            <img src="../../static/img/perpic_03.jpg" th:src="@{img/perpic_03.jpg}" alt="..." class="img-rounded songSheet">
+            </a>
+			<a href="../music/songSheetDetail.html" target="_blank">
+            <img src="../../static/img/perpic_03.jpg" th:src="@{img/perpic_03.jpg}" alt="..." class="img-rounded songSheet">
+            </a>
+			<a href="../music/songSheetDetail.html" target="_blank">
+            <img src="../../static/img/perpic_03.jpg" th:src="@{img/perpic_03.jpg}" alt="..." class="img-rounded songSheet">
+            </a>
+
+		</div>
+
+		<!-- 底部 -->
+        <div th:replace="common/footer :: footer"></div>
+
+	</div>
+	</body>
+
+	<script>
+	$(function(){
+		$('#myCarousel').carousel({interval:2000});
+	})
+
+    function openWin(tag,obj){
+        obj.target = "_blank";
+        obj.href= "../music/player.html?name=" + tag;
+        obj.click();
+		// alert(tag);
+    }
+    </script>
+
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xq.serviceadmin.dao.CommentMapper">
+  <resultMap id="BaseResultMap" type="com.xq.serviceadmin.entity.Comment">
+    <!--@mbg.generated generated on Sun May 05 14:41:04 CST 2019.-->
+    <id column="comment_id" jdbcType="INTEGER" property="commentId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="music_id" jdbcType="INTEGER" property="musicId" />
+    <result column="commnet_desc" jdbcType="VARCHAR" property="commnetDesc" />
+    <result column="comment_time" jdbcType="TIME" property="commentTime" />
+    <result column="comment_agree_num" jdbcType="VARCHAR" property="commentAgreeNum" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Sun May 05 14:41:04 CST 2019.-->
+    comment_id, user_id, music_id, commnet_desc, comment_time, comment_agree_num
+  </sql>
+</mapper>

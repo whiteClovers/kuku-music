@@ -1,0 +1,44 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Bootstrap 101 Template</title>
+
+		<div th:include="common/header::style"></div>
+		<!--<link rel="stylesheet" th:href="@{css/bootstrap.min.css}" />-->
+        <!--<link rel="stylesheet" th:href="@{css/home.css}" />-->
+		<!--<script type="text/javascript" th:src="@{js/jquery.min.js}"></script>-->
+		<!--<script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>-->
+
+	</head>
+
+	<body>
+        <div th:replace="common/header :: header" style="margin-top: 10px"></div>
+		<!-- 歌曲列表 -->
+        <div class="container" style="width: 1200px;margin-top: 30px">
+            <ul class="list-group">
+                <li class="list-group-item" th:each="song : ${musicModel.musicList}" style="height: 110px">
+                    <span class="col-md-3" th:text="${song.name}" style="margin-top: 20px"></span>
+                    <div class="col-md-7">
+                        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=560 height=86
+                                th:src="@{'//music.163.com/outchain/player?type=2&id=' + ${song.id}+'&auto=0&height=66'}"></iframe>
+                    </div>
+                    <span class="col-md-2" style="margin-top: 20px">
+                        <a class="btn btn-large" th:href="@{/music/add/}+${song.id}">
+                            <span>+我喜欢</span>
+                        </a>
+                        <a class="btn btn-large" th:href="@{/music/add/}+${song.id}">
+                            <span>+收藏</span>
+                        </a>
+                    </span>
+                </li>
+
+            </ul>
+        </div>
+	</body>
+
+</html>

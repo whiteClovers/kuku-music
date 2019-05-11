@@ -1,0 +1,32 @@
+.fileinput-button {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 440px;
+}
+
+.fileinput-button input{
+    position:absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px;
+}
+
+#perSet{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.perPic{
+    width: 150px;
+    height: 140px;
+
+}
+
+.myset{
+    border: 1px solid darkgray;
+    height: 600px;
+    background-color: lightgoldenrodyellow;
+}

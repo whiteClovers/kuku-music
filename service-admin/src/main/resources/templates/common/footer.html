@@ -1,0 +1,69 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>footer</title>
+
+		<div th:include="common/header::style"></div>
+        <!--<link rel="stylesheet" th:href="@{css/bootstrap.min.css}" />-->
+
+        <!--<script type="text/javascript" th:src="@{js/jquery.min.js}"></script>-->
+        <!--<script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>-->
+
+		<!--<link rel="stylesheet" href="../../static/css/bootstrap.min.css" />-->
+		<!--<script type="text/javascript" src="../../static/js/jquery.min.js"></script>-->
+		<!--<script type="text/javascript" src="../../static/js/bootstrap.min.js"></script>-->
+
+	</head>
+
+	<style>
+		.footer_all {
+			background-color: rgb(34,34,34);
+			text-align: center;
+            margin-top: 60px;
+		}
+		
+		.a_span{
+			color: white;
+			margin-left: 30px;
+		}
+		
+		.hidden-xs{
+			margin-top: 20px;
+		}
+		
+		.copyright{
+			margin-bottom: 20px;
+		}
+	</style>
+
+	<body>
+		<div class="footer_all" th:fragment="footer">
+		<footer class="footer container">
+				<div class="clearfix">
+					<div class="footer-col footer-col-copy">
+						<ul class="footer-nav hidden-xs">
+							<li class="menu-item">
+								<a href="/about/" target="_blank">关于我们</a>
+								<a href="/archive/" target="_blank">文章归档</a>
+								<a rel="nofollow" href="/sitemap.xml" target="_blank">百度地图</a>
+								<a href="/Web_slt/" target="_blank">缩略生成</a>
+
+							</li>
+						</ul>
+						<div class="copyright"><i class="fa fa-copyright"></i><span class="a_span">Copyright2017-2018</span>
+							<a href="/" th:href="@{/}">KuKu Music</a> <span class="a_span">Email:15979033670@163.Com</span>
+
+						</div>
+					</div>
+				</div>
+
+		</footer>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Bootstrap 101 Template</title>
+
+		<link rel="stylesheet" th:href="@{css/bootstrap.min.css}" />
+		<script type="text/javascript" th:src="@{js/jquery.min.js}"></script>
+		<script type="text/javascript" th:src="@{js/bootstrap.min.js}"></script>
+
+		<link rel="stylesheet" href="../../static/css/bootstrap.min.css" />
+		<script type="text/javascript" src="../../static/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../static/js/bootstrap.min.js"></script>
+
+	</head>
+	
+	<style>
+		.container{
+			width: 700px;
+			margin-top: 40px;
+		}
+		
+		.list-group img{
+			/*width: 120px;
+            height:120px;*/
+            /*margin-left: 30px;*/
+
+            margin-bottom:30px;
+		}
+		
+		.perPic{
+			width: 120px;
+            height:120px;
+            float: left;
+		}
+		
+		.rightHand{
+			margin-left: 30px;
+		}
+		
+		
+	</style>
+	
+	<body>
+
+		<!-- 歌曲列表 -->
+		<ul class="container list-group" th:each="song:${musicModel.musicList}">
+            <li class="list-group-item">
+                <iframe frameborder="no" border="0" marginwidth="0" mar ginheight="0" width=298 height=52
+                        th:src="@{//music.163.com/outchain/player?type=2&auto=0&height=32&id={att}(att=${song.mp3Url})}"></iframe>
+            </li>
+          <!--  <img th:src="@{//music.163.com/outchain/player?type=2&auto=0&height=32&id={att}(att=${song.mp3Url})}">-->
+            <li class="list-group-item">
+                <iframe frameborder="no" border="0" marginwidth="0" mar ginheight="0" width=298 height=52
+                        src="//music.163.com/outchain/player?type=2&auto=0&height=32&id=11111111"></iframe>
+            </li>
+
+			<li class="list-group-item">Morbi leo risus</li>
+			<li class="list-group-item">Porta ac consectetur ac</li>
+			<li class="list-group-item">Vestibulum at eros</li>
+		</ul>
+
+	</body>
+	
+	<script>
+		function openWin(tag,obj){
+		obj.target = "_blank";
+		obj.href= "player.html?name=" + tag;
+		obj.click();
+//		alert(tag);
+	}
+	</script>
+</html>

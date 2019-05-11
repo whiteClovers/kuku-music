@@ -1,0 +1,58 @@
+.row {
+    position: static;
+    height: 80px;
+    border: solid 1px gray;
+    background-color: rgb(169, 139, 111);
+}
+
+.row>div {
+    border: 1px solid blue;
+    margin-top: 27px;
+    /*color: white;*/
+    /*font-weight: 100;*/
+    /*font-family: "arial black";*/
+    text-align: center;
+}
+
+.topLink {
+    color: white;
+}
+
+/*.img-responsive {
+  display: block;
+  height: 100px;
+  width: 1300px;
+}*/
+
+.picLun{
+    max-height: 336px;
+    width: auto;
+    align-self: center;
+}
+
+.con2{
+    background-color: #ADADAD;
+}
+
+.all{
+    background-color: rgb(255,250,205);
+}
+
+.songSheet{
+    width: 200px;
+    height:auto;
+    margin-left: 60px;
+    /*margin-right: 20px;*/
+    margin-top:40px;
+}
+
+hr{
+    border: solid 1px red;
+}
+
+.daoHang{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 1200px;
+    font-size: large;
+}
