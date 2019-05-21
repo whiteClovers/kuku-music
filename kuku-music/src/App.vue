@@ -3,6 +3,7 @@
     <navbar/>
     <router-view/>
     <BackTop></BackTop>
+
   </div>
 </template>
 
@@ -12,7 +13,7 @@
 export default {
   name: 'App',
   components:{
-    Navbar
+    Navbar,
   },
   methods: {
 

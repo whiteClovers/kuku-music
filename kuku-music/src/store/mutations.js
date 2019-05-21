@@ -1,7 +1,11 @@
+import state from "./state";
+
 export default {
   //登录
-  userLogin(state, _curUser) {
+  userLogin(state, _curUser, loginState) {
+    sessionStorage.getItem("curUser")
     sessionStorage.setItem('curUser', JSON.stringify(_curUser))
+    sessionStorage.setItem('loginState', loginState)
     state.curUser = _curUser
   },
   userToken(state, _token) {
@@ -9,8 +13,10 @@ export default {
     state.token = _token
   },
   userLogOut() {
-    sessionStorage.removeItem('token')
+    console.log('1'+sessionStorage.getItem("curUser"))
     sessionStorage.removeItem('curUser')
+    state.curUser=null
+    console.log('2'+sessionStorage.getItem("curUser"))
   },
 
   //更改导航栏主题

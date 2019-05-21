@@ -6,6 +6,7 @@ import Music from '@/pages/music/Music'
 import MusicList from '@/pages/music/MusicList'
 import User from '@/pages/home/components/User'
 import About from '@/pages/about/About'
+
 //
 Vue.use(VueRouter)
 const router = new VueRouter({
@@ -40,7 +41,8 @@ const router = new VueRouter({
       name: 'About',
       component: About,
     },
-  ]
+  ],
+  mode: "history"
 })
 
 

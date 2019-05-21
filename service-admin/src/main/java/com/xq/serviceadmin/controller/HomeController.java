@@ -41,6 +41,13 @@ public class HomeController {
     }
 
 
+    /* 
+    * @Description:  
+    * @Param: [session, phone, pwd] 
+    * @return: com.xq.serviceadmin.entity.dto.BaseResult 
+    * @Author: Mr.Fu 
+    * @Date: 2019/5/18 
+    */ 
     @PostMapping("/login")
     public BaseResult login(
             HttpSession session,
@@ -76,41 +83,39 @@ public class HomeController {
         return "user/register_stay";
     }
 
-    /**
-     * 注册用户
-     *
-     * @param user
-     * @return
-     */
+    /* 
+    * @Description:  用户注册
+    * @Param: [user, phone, pwd] 
+    * @return: com.xq.serviceadmin.entity.dto.BaseResult
+    * @Author: Mr.Fu 
+    * @Date: 2019/5/18 
+    */
     @PostMapping("/register")
-    public String registerUser(HttpServletRequest request, User user) {
-        String phone = request.getParameter("phone");
-        String password = request.getParameter("password");
-
+    public BaseResult registerUser(User user,
+                  @RequestParam(value = "phone", required = true) String phone,
+                  @RequestParam(value = "pwd", required = true) String pwd) {
+//        String phone = request.getParameter("phone");
+//        String password = request.getParameter("password");
 
         user.setPhone(phone);
-        user.setPassword(password);
+        user.setPassword(pwd);
         int insert = userService.insert(user);
         System.out.println(insert);
 
         if (insert == 1) {
-            System.out.println("注册成功");
+            return BaseResult.ok();
         } else {
-            System.out.println("注册失败");
+            return BaseResult.notOk("注册失败");
         }
-        return "redirect:/register_stay";
+
     }
 
     @GetMapping("/validate")
     public String validate(HttpSession session) {
-        System.out.println(session.getAttribute("tname"));
-
-        if (session == null) {
-            return "redirect:/";
-        }
         session.invalidate();
 
-        return "redirect:/";
+        return "ok";
     }
+
 
 }

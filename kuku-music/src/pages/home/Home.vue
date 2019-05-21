@@ -4,13 +4,11 @@
     <!--轮播-->
     <carousel/>
 
-    <hot-music-list/>
+    <!--热门歌曲-->
 
     <hot-music/>
-    <!--底部-->
 
-
-<!--    <user/>-->
+    <!--<MyFooter/>-->
 
   </div>
 </template>
@@ -18,7 +16,7 @@
   import Carousel from './components/Carousel'
   import HotMusic from './components/HotMusic'
   import HotMusicList from './components/HotMusicList'
-
+  import RecommentMusic from './components/RecommentMusic'
   import User from './components/User'
 
   export default {
@@ -27,6 +25,7 @@
       HotMusic,
       HotMusicList,
       User,
+      RecommentMusic,
     },
     data() {
       return {}

@@ -6,10 +6,7 @@ import com.xq.serviceadmin.entity.User;
 import com.xq.serviceadmin.entity.dto.BaseResult;
 import com.xq.serviceadmin.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -42,30 +39,33 @@ public class UserController {
     @GetMapping("/user/{id}")
     public BaseResult view(HttpSession session, @PathVariable("id") Integer id) {
         User user = (User) session.getAttribute("user");
-        return id == user.getUserId() ? BaseResult.ok(user) : BaseResult.notOk("没有权限");
+        User curUser = userMapper.selectByPrimaryKey(user.getUserId());
+        return id == user.getUserId() ? BaseResult.ok(curUser) : BaseResult.notOk("没有权限");
     }
 
 
+    /* 
+    * @Description: 用户信息修改 
+    * @Param: [user, session] 
+    * @return: com.xq.serviceadmin.entity.dto.BaseResult 
+    * @Author: Mr.Fu 
+    * @Date: 2019/5/18 
+    */ 
     @PostMapping("/edit")
-    public String userEdit(HttpServletRequest request, User user) throws Exception {
-        Integer userId = (Integer) request.getSession().getAttribute("userId");
-//        String nickName = request.getParameter("nickName");
-//        System.out.println(nickName);
-
-        System.out.println("userId :" + userId);
+    public BaseResult userEdit(User user, HttpSession session) throws Exception {
+        User loginUser = (User)session.getAttribute("user");
+        Integer userId = loginUser.getUserId();
 
         user.setUserId(userId);
-        System.out.println("edituser :" + user);
 
         int i = userMapper.updateByPrimaryKeySelective(user);
+        System.out.println("编辑后的user :" + user);
 
         if (i == 1) {
-            System.out.println("更新成功");
+            return BaseResult.ok(user);
         } else {
-            System.out.println("更新失败");
+            return BaseResult.notOk("编辑用户信息失败");
         }
-
-        return "redirect:/user";
     }
 
 }

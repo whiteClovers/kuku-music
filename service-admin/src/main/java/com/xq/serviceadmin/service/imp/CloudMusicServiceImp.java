@@ -147,4 +147,9 @@ public class CloudMusicServiceImp implements CloudMusicService {
         List<Music> musics = musicMapper.selectByUserId(userId);
         return musics;
     }
+
+    @Override
+    public List<Music> getHotMusic() {
+        return musicMapper.selectAll().subList(0,9);
+    }
 }

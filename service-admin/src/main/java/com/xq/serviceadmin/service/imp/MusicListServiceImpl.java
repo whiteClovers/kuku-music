@@ -4,6 +4,7 @@ import com.xq.serviceadmin.dao.MusicListMapper;
 import com.xq.serviceadmin.entity.MusicList;
 import com.xq.serviceadmin.service.MusicListService;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 import tk.mybatis.mapper.entity.Example;
 
 import javax.annotation.Resource;
@@ -28,6 +29,9 @@ public class MusicListServiceImpl implements MusicListService {
     }
 
     public int insert(MusicList musicList) {
+        if (StringUtils.isEmpty(musicList.getListPic())){
+            musicList.setListPic("7pKS_S86OJo8cHcDNKFw==/109951163922821064.jpg");
+        }
         return musicListMapper.insert(musicList);
     }
 

@@ -27,6 +27,19 @@ public class MusicController {
     @Autowired
     CloudMusicService cloudMusicService;
 
+    /* 
+    * @Description: 音乐搜索 
+    * @Param: [s, pageNum, pageSize, type] 
+    * @return: com.xq.serviceadmin.entity.dto.BaseResult 
+    * @Author: Mr.Fu 
+    * @Date: 2019/5/18 
+    */ 
+    @GetMapping("/search")
+    public BaseResult musicSearch(String s, String pageNum, String pageSize, String type) throws Exception {
+        MusicRootBean musicRootBean = cloudMusicService.musicSearch(s, pageNum, pageSize, type);
+        return BaseResult.ok(musicRootBean);
+    }
+
     /**
      * 网易云音乐搜索
      *
@@ -35,10 +48,23 @@ public class MusicController {
      * @param pageSize 每页数量
      * @return
      */
-    @GetMapping("/search")
-    public BaseResult musicSearch(String s, String pageNum, String pageSize, String type) throws Exception {
+    @GetMapping("/hotMusicPlay")
+    public BaseResult hotMusicPlay(String s, String pageNum, String pageSize, String type) throws Exception {
         MusicRootBean musicRootBean = cloudMusicService.musicSearch(s, pageNum, pageSize, type);
         return BaseResult.ok(musicRootBean);
+    }
+
+    /* 
+    * @Description: 从数据库随机选取9条music数据作为展示 
+    * @Param: [] 
+    * @return: com.xq.serviceadmin.entity.dto.BaseResult 
+    * @Author: Mr.Fu 
+    * @Date: 2019/5/18 
+    */ 
+    @GetMapping("/hotMusic")
+    public BaseResult getHotMusic() {
+        List<Music> musics= cloudMusicService.getHotMusic();
+        return BaseResult.ok(musics);
     }
 
     /**
@@ -103,6 +129,13 @@ public class MusicController {
         return BaseResult.ok(comment);
     }
 
+    /** 
+    * @Description: 获取当前用户歌单列表 
+    * @Param: [model, request] 
+    * @return: java.lang.String 
+    * @Author: Mr.Fu 
+    * @Date: 2019/5/18 
+    */ 
     @Deprecated
     @GetMapping("/list")
     public String getAllMusicByUserId(Model model, HttpServletRequest request) {
@@ -111,5 +144,6 @@ public class MusicController {
         model.addAttribute("musics", allMusic);
         return "/user/myPage";
     }
+
 
 }

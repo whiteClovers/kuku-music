@@ -28,4 +28,6 @@ public interface CloudMusicService {
     MusicList getLoginUserMusicList(Integer listId);
 
     List<Music> getAllMusic(Integer userId);
+
+    List<Music> getHotMusic();
 }

@@ -2,7 +2,7 @@
   <Row justify="center" align="middle" style="margin-top: 25px">
     <Col span="16" offset="4">
       <div class="movieSearch">
-        <div class="certain-category-search-wrapper searchBox" style="width: auto">
+        <div class="certain-category-search-wrapper searchBox" style="width: auto;float: left;">
           <AutoComplete
             v-model="searchInput"
             size="large"
@@ -13,14 +13,20 @@
           >
           </AutoComplete>
         </div>
-
       </div>
 
       <div class="musicList">
+        <!--<div  v-show="showLoading">-->
+          <!--<Spin fix>-->
+            <!--<Icon type="ios-loading" size=18 class="demo-spin-icon-load"></Icon>-->
+            <!--<div>加載中。。</div>-->
+          <!--</Spin>-->
+        <!--</div>-->
         <div class="dataResult" v-show="this.songCount!==null">
           为您找到关于“{{searchInput}}”的结果共 {{songCount}} 个
         </div>
         <div>
+
           <Card style="width:366px;float: left;margin: 20px" v-for="item in listData" :key="item.id">
             <div style="text-align:center">
               <img style="height: 320px;width: 280px" :src="item.album.blurPicUrl">
@@ -35,9 +41,9 @@
                 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52
                         :src="'//music.163.com/outchain/player?type=2&id='+item.id+'&auto=0&height=32'"></iframe>
 
-                <Button @click="setModal1Visible(true),loadMusicCommentList(item.commentThreadId)">
-                  查看歌曲评论
-                </Button>
+                <!--<Button @click="setModal1Visible(true),loadMusicCommentList(item.commentThreadId)">-->
+                  <!--查看歌曲评论-->
+                <!--</Button>-->
 
                 <Button @click="loadMusicListInfo(item.id)">
                   添加到歌单
@@ -55,7 +61,7 @@
           okText="添加歌曲到歌单"
           cancelText="取消"
           @on-ok="addMusic2DB"
-          @on-cancel="cancel"
+
         >
           <RadioGroup v-model="musicListId" vertical>
             <Radio :label="item.listId" v-for="item in musicListData" :key="item.listId">
@@ -145,6 +151,9 @@
     components: {},
     data() {
       return {
+        // 是否显示loading
+        showLoading: false,
+
         searchInput: '',
         pageNum: 1,
         pageSize: 12,
@@ -172,6 +181,7 @@
         commentTotal: 0,
         //歌曲评论相关---end---
         timeoutflag: null,
+
       }
     },
     methods: {
@@ -185,8 +195,11 @@
         this.pageNum = 1
       },
 
+      /*获取音乐搜索结果*/
       loadMusicSearchList() {
-        this.loading = true
+        this.showLoading = true
+        this.$Spin.show();
+        // alert('aa')
         console.log(this.pageNum, this.pageSize)
         this.$http.paramsGet('/music/search', {
           pageNum: (this.pageNum - 1) * this.pageSize,
@@ -199,7 +212,13 @@
           this.listData = data.result.songs
           this.total = data.result.songCount
           this.songCount = data.result.songCount
-          this.loading = false
+          this.$Spin.hide();
+          if (data.result === 'ok') {
+            this.$Notice.success({
+
+            });
+
+          }
         })
       },
       loadMusicCommentList(id, pageNum, pageSize) {
@@ -255,7 +274,7 @@
       }
     },
     mounted() {
-      this.loadMusicSearchList(this.pageNum, this.pageSize, this.searchInput)
+      // this.loadMusicSearchList(this.pageNum, this.pageSize, this.searchInput)
     },
   }
 </script>
@@ -297,4 +316,24 @@
     right: 10px;
     top: 145px;
   }
+
+  .demo-spin-icon-load{
+    animation: ani-demo-spin 1s linear infinite;
+  }
+  @keyframes ani-demo-spin {
+    from { transform: rotate(0deg);}
+    50%  { transform: rotate(180deg);}
+    to   { transform: rotate(360deg);}
+  }
+  .demo-spin-col{
+    /*height: 10px;*/
+    /*position: relative;*/
+    /*border: 1px solid #eee;*/
+
+    float: left;
+    margin-left: 180px;
+    margin-top: 100px;
+  }
+
+
 </style>

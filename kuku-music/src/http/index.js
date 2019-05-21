@@ -94,5 +94,25 @@ export default {
         }).catch(reject);
       }
     )
+  },
+  singlePost: function (url) {
+    return new Promise(
+      (resolve, reject) => {
+        Axios.post(url, {}).then(res => {
+          resolve(res);
+        }).catch(reject);
+      }
+    )
+  },
+  postParam: function (url, params) {
+    return new Promise(
+      (resolve, reject) => {
+        Axios.post(url,{
+          params: params
+        }).then(res => {
+          resolve(res);
+        }).catch(reject);
+      }
+    )
   }
 }

@@ -24,21 +24,14 @@
             <div>
               <i-form form-validate :model="formValidate" :rules="ruleValidate" :label-width="80">
                 <Form-item label="昵称" prop="name">
-                  <i-input :value.sync="formValidate.userNickname" placeholder="请输入昵称"></i-input>
+                  <i-input v-model="formValidate.userNickname" placeholder="请输入昵称"></i-input>
                 </Form-item>
                 <Form-item label="城市" prop="city">
-                  <i-input :value.sync="formValidate.addr" placeholder="请输入所在城市"></i-input>
+                  <i-input v-model="formValidate.addr" placeholder="请输入所在城市"></i-input>
                 </Form-item>
                 <Form-item label="邮箱" prop="emali">
-                  <i-input :value.sync="formValidate.emali" placeholder="请输入邮箱"></i-input>
+                  <i-input v-model="formValidate.emali" placeholder="请输入邮箱"></i-input>
                 </Form-item>
-                <!--<Form-item label="城市" prop="city">-->
-                <!--<i-select :model.sync="formValidate.city" placeholder="请选择所在地">-->
-                <!--<i-option value="beijing">北京市</i-option>-->
-                <!--<i-option value="shanghai">上海市</i-option>-->
-                <!--<i-option value="shenzhen">深圳市</i-option>-->
-                <!--</i-select>-->
-                <!--</Form-item>-->
 
                 <Form-item label="性别" prop="gender">
                   <Radio-group :model.sync="formValidate.gender">
@@ -50,28 +43,21 @@
                   <Row>
                     <i-col span="11">
                       <Form-item prop="date">
-                        <Date-picker type="date" placeholder="选择日期" :value.sync="formValidate.birth"></Date-picker>
+                        <Date-picker type="date" placeholder="选择日期" v-model="formValidate.birth"></Date-picker>
                       </Form-item>
                     </i-col>
                     <i-col span="2" style="text-align: center">-</i-col>
 
                   </Row>
                 </Form-item>
-                <!--<Form-item label="爱好" prop="interest">-->
-                <!--<Checkbox-group :model.sync="formValidate.interest">-->
-                <!--<Checkbox value="吃饭"></Checkbox>-->
-                <!--<Checkbox value="睡觉"></Checkbox>-->
-                <!--<Checkbox value="跑步"></Checkbox>-->
-                <!--<Checkbox value="看电影"></Checkbox>-->
-                <!--</Checkbox-group>-->
-                <!--</Form-item>-->
+
                 <Form-item label="介绍" prop="desc">
-                  <i-input :value.sync="formValidate.desc" type="textarea" :autosize="{minRows: 2,maxRows: 5}"
+                  <i-input v-model="formValidate.desc" type="textarea" :autosize="{minRows: 2,maxRows: 5}"
                            placeholder="请输入..."></i-input>
                 </Form-item>
                 <Form-item label="头像" prop="avatar">
-                  <Avatar size="large"
-                          :src="this.formValidate.pic"/>
+                  <i-input v-model="formValidate.pic" type="hidden"/>
+                  <Avatar size="large" :src="this.formValidate.pic"/>
                   <Poptip placement="right" width="400">
                     <Button>点击进行头像上传</Button>
                     <div class="api" slot="content">
@@ -93,7 +79,7 @@
                 </Form-item>
                 <Form-item>
                   <i-button type="primary" @click="handleSubmit('formValidate')">提交</i-button>
-                  <i-button type="ghost" @click="handleReset('formValidate')" style="margin-left: 8px">重置</i-button>
+                  <i-button type="ghost" @click="handleReset('formValidate')" style="margin-left: 8px;color: blanchedalmond">重置</i-button>
                 </Form-item>
               </i-form>
             </div>
@@ -167,7 +153,8 @@
           console.log(data)
         })
       },
-      handleSubmit(name) {
+
+      /*handleSubmit(name) {
         this.$refs[name].validate((valid) => {
           if (valid) {
             this.$Message.success('提交成功!');
@@ -175,7 +162,38 @@
             this.$Message.error('表单验证失败!');
           }
         })
+      },*/
+
+      /* 用户编辑 */
+      handleSubmit(f) {
+
+        this.editUser(this.formValidate)
+        console.log(this.formValidate)
+        console.log('f-->'+f)
       },
+      editUser(user) {
+        this.$http.post('/edit',user).then(res => {
+          /*let data = res.data
+          this.formValidate = data.data
+          */
+
+          let data = res.data
+          console.log(data)
+          this.formValidate = data.data
+          if (data.result === 'ok') {
+            this.$Notice.success({
+              desc: '修改成功!',
+            });
+          }
+        }).catch((error) => {
+          this.$Notice.error({
+            message: '很抱歉',
+            desc: '修改失败!',
+          })
+        })
+      },
+
+      /* 重置 */
       handleReset(name) {
         this.$refs[name].resetFields();
       },
