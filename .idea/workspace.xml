@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3be775e-2bb5-4010-8628-43422eb96bdb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kuku-music/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/kuku-music/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kuku-music/src/http/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/kuku-music/src/http/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kuku-music/src/pages/home/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/kuku-music/src/pages/home/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kuku-music/src/pages/home/components/Carousel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/kuku-music/src/pages/home/components/Carousel.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kuku-music/src/pages/home/components/HotMusic.vue" beforeDir="false" afterPath="$PROJECT_DIR$/kuku-music/src/pages/home/components/HotMusic.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kuku-music/src/pages/home/components/MyFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/kuku-music/src/pages/home/components/MyFooter.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kuku-music/src/pages/home/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/kuku-music/src/pages/home/components/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kuku-music/src/pages/home/components/User.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/kuku-music/src/pages/music/MusicSearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/kuku-music/src/pages/music/MusicSearch.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kuku-music/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/kuku-music/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kuku-music/src/store/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/kuku-music/src/store/mutations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kuku-music/src/store/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/kuku-music/src/store/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/controller/MusicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/service/CloudMusicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/service/CloudMusicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/service/imp/CloudMusicServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/service/imp/CloudMusicServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/service/imp/MusicListServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/service/imp/MusicListServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-admin/src/test/java/com/xq/serviceadmin/MybatisGeneratorTest/MusicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-admin/src/test/java/com/xq/serviceadmin/MybatisGeneratorTest/MusicTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-admin/src/test/java/com/xq/serviceadmin/MybatisGeneratorTest/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-admin/src/test/java/com/xq/serviceadmin/MybatisGeneratorTest/UserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/eureka/target/" />
@@ -69,33 +60,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MusicListController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/controller/MusicListController.java">
+      <file leaf-file-name="HotMusic.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/HotMusic.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="60" column="78" lean-forward="true" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JAVA/com.xq.test" pinned="false" current-in-tab="true">
-        <entry file="uml://JAVA/com.xq.test">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>com.xq.test</OriginalElement>
-              <nodes />
-              <notes />
-              <edges />
-              <settings layout="Hierarchic Group" zoom="1.0" x="106.5" y="293.0" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Properties</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+            <state relative-caret-position="1305">
+              <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -109,47 +78,69 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/User.vue">
+      <file leaf-file-name="Navbar.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/Navbar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="342" column="20" selection-start-line="342" selection-start-column="20" selection-end-line="342" selection-end-column="20" />
+            <state relative-caret-position="29">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding>
-                <element signature="n#style#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#Content#0;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#Avatar#0;n#FormItem#6;n#Form#0;n#Content#0;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#Upload#0;n#FormItem#6;n#Form#0;n#Content#0;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#FormItem#7;n#Form#0;n#Content#0;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#Content#1;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#Button#0;n#Content#1;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#Button#0;n#template#2;n#Table#0;n#Content#1;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#Input#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#FormItem#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#FormItem#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#Input#0;n#FormItem#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#FormItem#2;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#Input#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#Input#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#FormItem#2;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#0;n#Col#0;n#Row#0;n#Menu#0;n#template#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kuku-music/src/http/index.js">
+      <file leaf-file-name="EurekaApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/eureka/src/main/java/com/xq/eureka/EurekaApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="103" column="7" lean-forward="true" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
+            <state relative-caret-position="174">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Store.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/Store.vue">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="mutations.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kuku-music/src/store/mutations.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="14" column="15" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecommentMusic.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/RecommentMusic.vue">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="MusicSearch.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/music/MusicSearch.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1363">
+              <caret line="47" column="87" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="state.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kuku-music/src/store/state.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1914">
+              <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyFooter.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/MyFooter.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -193,6 +184,7 @@
       <find>alert</find>
       <find>新增</find>
       <find>hotMusicPlay</find>
+      <find>curUser</find>
     </findStrings>
     <replaceStrings>
       <replace>user</replace>
@@ -213,9 +205,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kuku-music/src/store/state.js" />
         <option value="$PROJECT_DIR$/kuku-music/src/pages/home/components/Carousel.vue" />
-        <option value="$PROJECT_DIR$/kuku-music/src/store/mutations.js" />
         <option value="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/service/CloudMusicService.java" />
         <option value="$PROJECT_DIR$/kuku-music/src/pages/home/components/Store.vue" />
         <option value="$PROJECT_DIR$/kuku-music/src/pages/home/components/NewUser.vue" />
@@ -223,27 +213,30 @@
         <option value="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/service/imp/CloudMusicServiceImp.java" />
         <option value="$PROJECT_DIR$/kuku-music/src/pages/home/components/RecommentMusic.vue" />
         <option value="$PROJECT_DIR$/kuku-music/src/pages/home/components/Footer.vue" />
-        <option value="$PROJECT_DIR$/kuku-music/src/pages/home/components/MyFooter.vue" />
-        <option value="$PROJECT_DIR$/kuku-music/src/App.vue" />
         <option value="$PROJECT_DIR$/kuku-music/src/pages/home/components/MusicListManage.vue" />
         <option value="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/service/imp/MusicListServiceImpl.java" />
         <option value="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/entity/User.java" />
         <option value="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/entity/Music.java" />
         <option value="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/service-admin/pom.xml" />
-        <option value="$PROJECT_DIR$/kuku-music/src/pages/home/Home.vue" />
-        <option value="$PROJECT_DIR$/kuku-music/src/pages/home/components/HotMusic.vue" />
-        <option value="$PROJECT_DIR$/kuku-music/src/pages/music/MusicSearch.vue" />
         <option value="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/kuku-music/src/pages/home/components/Navbar.vue" />
         <option value="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/controller/MusicController.java" />
-        <option value="$PROJECT_DIR$/service-admin/src/test/java/com/xq/serviceadmin/MybatisGeneratorTest/MusicTest.java" />
-        <option value="$PROJECT_DIR$/service-admin/src/test/java/com/xq/serviceadmin/MybatisGeneratorTest/UserTest.java" />
         <option value="$PROJECT_DIR$/kuku-music/src/http/index.js" />
         <option value="$PROJECT_DIR$/kuku-music/src/pages/home/components/User.vue" />
         <option value="$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/controller/MusicListController.java" />
         <option value="$PROJECT_DIR$/service-admin/src/main/java/com/xq/test/Game.java" />
+        <option value="$PROJECT_DIR$/service-admin/src/test/java/com/xq/serviceadmin/MybatisGeneratorTest/MusicTest.java" />
+        <option value="$PROJECT_DIR$/service-admin/src/test/java/com/xq/serviceadmin/MybatisGeneratorTest/UserTest.java" />
+        <option value="$PROJECT_DIR$/service-admin/src/main/resources/templates/common/footer.html" />
+        <option value="$PROJECT_DIR$/kuku-music/src/pages/home/Home.vue" />
+        <option value="$PROJECT_DIR$/kuku-music/src/App.vue" />
+        <option value="$PROJECT_DIR$/kuku-music/src/pages/home/components/MyFooter.vue" />
+        <option value="$PROJECT_DIR$/kuku-music/src/store/state.js" />
+        <option value="$PROJECT_DIR$/kuku-music/src/store/mutations.js" />
+        <option value="$PROJECT_DIR$/kuku-music/src/pages/music/MusicSearch.vue" />
+        <option value="$PROJECT_DIR$/kuku-music/src/pages/home/components/HotMusic.vue" />
+        <option value="$PROJECT_DIR$/kuku-music/src/pages/home/components/Navbar.vue" />
       </list>
     </option>
   </component>
@@ -305,6 +298,73 @@
             <path>
               <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
               <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="footer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="music" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
               <item name="service-admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -352,6 +412,23 @@
               <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
               <item name="service-admin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="service-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
+              <item name="service-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -370,47 +447,14 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
-              <item name="service-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xq" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
-              <item name="service-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xq" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceadmin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kukumusic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kuku-music" type="462c0819:PsiDirectoryNode" />
-              <item name="service-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xq" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="MybatisGeneratorTest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,7 +507,7 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="UserTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MusicTest.testMusicListAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-admin" />
       <extension name="coverage">
         <pattern>
@@ -474,8 +518,31 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.xq.serviceadmin.MybatisGeneratorTest" />
-      <option name="MAIN_CLASS_NAME" value="com.xq.serviceadmin.MybatisGeneratorTest.UserTest" />
-      <option name="METHOD_NAME" value="testLogin" />
+      <option name="MAIN_CLASS_NAME" value="com.xq.serviceadmin.MybatisGeneratorTest.MusicTest" />
+      <option name="METHOD_NAME" value="testMusicListAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="MusicTest.testMusicSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xq.serviceadmin.MybatisGeneratorTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.xq.serviceadmin.MybatisGeneratorTest" />
+      <option name="MAIN_CLASS_NAME" value="com.xq.serviceadmin.MybatisGeneratorTest.MusicTest" />
+      <option name="METHOD_NAME" value="testMusicSearch" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -499,29 +566,6 @@
       <option name="PACKAGE_NAME" value="com.xq.serviceadmin.MybatisGeneratorTest" />
       <option name="MAIN_CLASS_NAME" value="com.xq.serviceadmin.MybatisGeneratorTest.UserTest" />
       <option name="METHOD_NAME" value="testRegister" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="UserTest.testUserEdit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service-admin" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xq.serviceadmin.MybatisGeneratorTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.xq.serviceadmin.MybatisGeneratorTest" />
-      <option name="MAIN_CLASS_NAME" value="com.xq.serviceadmin.MybatisGeneratorTest.UserTest" />
-      <option name="METHOD_NAME" value="testUserEdit" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -591,8 +635,8 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserTest.testUserEdit" />
-      <item itemvalue="JUnit.UserTest.testLogin" />
+      <item itemvalue="JUnit.MusicTest.testMusicSearch" />
+      <item itemvalue="JUnit.MusicTest.testMusicListAdd" />
       <item itemvalue="JUnit.UserTest.testRegister" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.ServiceAdminApplication" />
@@ -601,9 +645,9 @@
       <list>
         <item itemvalue="Spring Boot.ServiceAdminApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
+        <item itemvalue="JUnit.MusicTest.testMusicSearch" />
+        <item itemvalue="JUnit.MusicTest.testMusicListAdd" />
         <item itemvalue="JUnit.UserTest.testRegister" />
-        <item itemvalue="JUnit.UserTest.testLogin" />
-        <item itemvalue="JUnit.UserTest.testUserEdit" />
       </list>
     </recent_temporary>
   </component>
@@ -638,43 +682,48 @@
       <workItem from="1558176955115" duration="4138000" />
       <workItem from="1558261199194" duration="3918000" />
       <workItem from="1558421080129" duration="5637000" />
+      <workItem from="1558456747888" duration="925000" />
+      <workItem from="1558592839723" duration="3891000" />
+      <workItem from="1558766825083" duration="853000" />
+      <workItem from="1559123223468" duration="10000" />
+      <workItem from="1559461421487" duration="309000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MusicTest_testMusicSearch - 2019.05.19 at 23h 33m 59s.xml">
-      <configuration name="MusicTest.testMusicSearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MusicTest_testMusicSearch - 2019.05.19 at 23h 36m 24s.xml">
-      <configuration name="MusicTest.testMusicSearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MusicTest_testMusicListAdd - 2019.05.19 at 23h 40m 48s.xml">
-      <configuration name="MusicTest.testMusicListAdd" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testUserEdit - 2019.05.19 at 23h 47m 51s.xml">
-      <configuration name="UserTest.testUserEdit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testLogin - 2019.05.19 at 23h 49m 32s.xml">
-      <configuration name="UserTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testLogin - 2019.05.19 at 23h 53m 10s.xml">
-      <configuration name="UserTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testLogin - 2019.05.19 at 23h 54m 51s.xml">
-      <configuration name="UserTest.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testRegister - 2019.05.19 at 23h 56m 55s.xml">
-      <configuration name="UserTest.testRegister" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testRegister - 2019.05.19 at 23h 59m 17s.xml">
-      <configuration name="UserTest.testRegister" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserTest_testRegister - 2019.05.20 at 00h 00m 54s.xml">
       <configuration name="UserTest.testRegister" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserTest - 2019.05.22 at 00h 43m 45s.xml">
+      <configuration name="UserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MusicTest_testMusicSearch - 2019.05.22 at 00h 44m 54s.xml">
+      <configuration name="MusicTest.testMusicSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MusicTest_testMusicListAdd - 2019.05.22 at 00h 46m 16s.xml">
+      <configuration name="MusicTest.testMusicListAdd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testUserEdit - 2019.05.22 at 00h 47m 15s.xml">
+      <configuration name="UserTest.testUserEdit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testUserEdit - 2019.05.22 at 00h 48m 05s.xml">
+      <configuration name="UserTest.testUserEdit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testLogin - 2019.05.22 at 00h 49m 02s.xml">
+      <configuration name="UserTest.testLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testRegister - 2019.05.22 at 00h 50m 09s.xml">
+      <configuration name="UserTest.testRegister" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MusicTest_testMusicListAdd - 2019.05.22 at 00h 53m 11s.xml">
+      <configuration name="MusicTest.testMusicListAdd" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MusicTest_testMusicSearch - 2019.05.22 at 00h 54m 17s.xml">
+      <configuration name="MusicTest.testMusicSearch" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95698000" />
+    <option name="totallyTimeSpent" value="101686000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -704,19 +753,19 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="5" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.36956522" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32826087" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49946696" weight="0.32899022" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32899022" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run Dashboard" order="18" sideWeight="0.46695095" visible="true" weight="0.25652173" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="18" sideWeight="0.46695095" visible="true" weight="0.23369566" />
       <window_info anchor="bottom" id="Version Control" order="15" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32826087" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.4978261" />
       <window_info anchor="right" id="Mybatis datasource" order="5" show_stripe_button="false" side_tool="true" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.32899022" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899022" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.18710022" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.32826087" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.18369566" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.1977612" />
       <window_info anchor="bottom" id="Problems" order="13" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info id="Web" order="7" side_tool="true" />
@@ -749,73 +798,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/Store.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5945">
-          <caret line="205" selection-start-line="205" selection-end-line="205" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/MusicListManage.vue" />
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12735" column="13" selection-start-line="12735" selection-start-column="13" selection-end-line="12735" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/music/MusicList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="102" column="43" lean-forward="true" selection-start-line="102" selection-start-column="43" selection-end-line="102" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/common/user/Register.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
-          <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/node_modules/iview/src/components/form/form-item.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/config/CorsConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/dao/MusicListMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -858,13 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/HotMusicList.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/config/SecurityConfig.java" />
     <entry file="file://$PROJECT_DIR$/service-admin/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -877,24 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2958">
           <caret line="108" column="7" selection-start-line="108" selection-start-column="7" selection-end-line="108" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/HotMusic.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="208" column="8" selection-start-line="191" selection-start-column="6" selection-end-line="208" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#Breadcrumb#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#Col#0;n#Row#0;n#template#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/music/MusicSearch.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5800">
-          <caret line="200" column="25" selection-start-line="200" selection-start-column="25" selection-end-line="200" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -979,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/Navbar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4988">
-          <caret line="172" column="63" selection-start-line="172" selection-start-column="63" selection-end-line="172" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/music/Music.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2146">
@@ -1000,13 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/java/com/xq/eureka/EurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/service/CloudMusicService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
@@ -1018,13 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-admin/src/test/java/com/xq/serviceadmin/MybatisGeneratorTest/MusicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1189">
-          <caret line="57" column="23" selection-start-line="48" selection-start-column="4" selection-end-line="63" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1063,24 +999,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-admin/src/test/java/com/xq/serviceadmin/MybatisGeneratorTest/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kuku-music/src/http/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="103" column="7" lean-forward="true" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        <state relative-caret-position="2987">
+          <caret line="103" column="7" selection-start-line="103" selection-start-column="7" selection-end-line="103" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1091,85 +1013,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/User.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="342" column="20" selection-start-line="342" selection-start-column="20" selection-end-line="342" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#Content#0;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#Avatar#0;n#FormItem#6;n#Form#0;n#Content#0;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#Upload#0;n#FormItem#6;n#Form#0;n#Content#0;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#FormItem#7;n#Form#0;n#Content#0;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#Content#1;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#Button#0;n#Content#1;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#Button#0;n#template#2;n#Table#0;n#Content#1;n#Layout#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#Input#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#FormItem#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#FormItem#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#Input#0;n#FormItem#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#FormItem#2;n#Form#0;n#div#0;n#Modal#0;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#Input#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#Input#0;n#FormItem#1;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#FormItem#2;n#Form#0;n#div#0;n#Modal#1;n#Layout#0;n#Col#0;n#Row#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/serviceadmin/controller/MusicListController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="60" column="78" lean-forward="true" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="78" />
+        <state relative-caret-position="1363">
+          <caret line="60" column="78" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/test/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/test/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/test/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/test/Wait.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/test/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/test/Order.java" />
+    <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/test/Product.java" />
+    <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/test/User.java" />
+    <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/test/Wait.java" />
+    <entry file="file://$PROJECT_DIR$/service-admin/src/main/java/com/xq/test/Game.java" />
     <entry file="uml://JAVA/com.xq.test">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1178,7 +1033,7 @@
           <nodes />
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="106.5" y="293.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="107.0" y="293.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -1187,6 +1042,141 @@
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-admin/src/test/java/com/xq/serviceadmin/MybatisGeneratorTest/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-admin/src/test/java/com/xq/serviceadmin/MybatisGeneratorTest/MusicTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="40" column="66" selection-start-line="40" selection-start-column="66" selection-end-line="40" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1392">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/node_modules/vuex/types/helpers.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-admin/src/main/resources/templates/common/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1508">
+          <caret line="52" column="86" selection-start-line="52" selection-start-column="86" selection-end-line="52" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/common/footer/MyFooter.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="45" column="2" selection-start-line="45" selection-start-column="2" selection-end-line="50" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/User.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="342" column="20" selection-start-line="342" selection-start-column="20" selection-end-line="342" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/HotMusicList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/MyFooter.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/store/state.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1914">
+          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/Store.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/store/mutations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/RecommentMusic.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/music/MusicSearch.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="47" column="87" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/HotMusic.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuku-music/src/pages/home/components/Navbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#FormItem#0;n#Form#0;n#div#0;n#Modal#0;n#Col#0;n#Row#0;n#Menu#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/src/main/java/com/xq/eureka/EurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>

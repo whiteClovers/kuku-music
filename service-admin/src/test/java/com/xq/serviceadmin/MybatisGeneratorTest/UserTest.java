@@ -33,16 +33,16 @@ public class UserTest {
     public void testRegister(){
         User user = new User();
 
-        String phone = "15933467890";
+        String phone = "15933467891";
         String password = "23342324";
         user.setPhone(phone);
         user.setPassword(password);
 
         int flag = userMapper.insertSelective(user);
         if (flag == 1){
-            System.err.println("注册成功");
+            System.out.println("注册成功");
         }else {
-            System.err.println("注册失败");
+            System.out.println("注册失败");
         }
     }
 
@@ -52,7 +52,7 @@ public class UserTest {
         String password = "1234zz";
         String loginName = userDao.login(phone, password);
 
-        System.err.println("登录用户: " +userMapper.selectAllByUserNickname(loginName));
+        System.out.println("登录用户: " +userMapper.selectAllByUserNickname(loginName));
     }
 
     @Test
@@ -71,10 +71,10 @@ public class UserTest {
 
         int flag = userMapper.updateByPrimaryKeySelective(user);
         if (flag == 1){
-            System.err.println("用户修改成功");
+            System.out.println("用户修改成功");
             System.out.println(userMapper.selectByPrimaryKey(1));
         }else {
-            System.err.println("用户修改失败");
+            System.out.println("用户修改失败");
         }
     }
 

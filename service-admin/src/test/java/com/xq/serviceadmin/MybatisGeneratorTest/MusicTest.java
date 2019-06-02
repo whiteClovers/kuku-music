@@ -43,7 +43,7 @@ public class MusicTest {
         List<Songs> songs = result.getSongs();
 
         // 打印搜索歌曲
-        songs.forEach(song -> System.err.println(song));
+        songs.forEach(song -> System.out.println(song));
     }
 
     @Test
@@ -56,9 +56,9 @@ public class MusicTest {
 
         int flag = musicListMapper.insertSelective(musicList);
         if (flag == 1){
-            System.err.println("新增成功");
+            System.out.println("新增成功");
         }else {
-            System.err.println("新增失败");
+            System.out.println("新增失败");
         }
 
     }

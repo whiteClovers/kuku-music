@@ -45,7 +45,7 @@
                   <!--查看歌曲评论-->
                 <!--</Button>-->
 
-                <Button @click="loadMusicListInfo(item.id)">
+                <Button @click="loadMusicListInfo(item.id)" v-if="$store.state.isLogin">
                   添加到歌单
                 </Button>
               </div>

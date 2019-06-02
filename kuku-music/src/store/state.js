@@ -67,103 +67,10 @@ let rDrawer = false
 export default {
   curUser: defaultUser,
   token: defaultToken,
-
-  //navbar动画
-  navbarAnimate: defaultNavbarAnimate,
-  //导航动画
-  navAppearAnimate: defaultNavAppearAnimate,
-  //导航进入动画
-  navEnterAnimate: defaultNavEnterAnimate,
-  //导航离开动画
-  navLeaveAnimate: defaultNavLeaveAnimate,
-  // 左右动画
-  leftAnimate: defaultLeftAnimate,
-  rightAnimate: defaultRightAnimate,
-
-  //动画速度
-  animateSpeed: defaultAnimateSpeed,
-
-  //默认头像
-  // defalutAvatar: "http://media.mirrorming.cn/mirrormingblog/default/weiwenhuaming.png",
-  // defalutGifAvatar: "http://media.mirrorming.cn/mirrormingblog/default/avatar.gif",
-  // defalutSmallGifAvatar: "http://media.mirrorming.cn/mirrormingblog/default/avatar222x120.gif",
-
-  animateEnterArr: [
-    'MyAnimateIn',
-    'bounceIn',
-    'bounceInDown',
-    'bounceInLeft',
-    'bounceInRight',
-    'bounceInUp',
-    'fadeIn',
-    'fadeInDown',
-    'fadeInDownBig',
-    'fadeInLeft',
-    'fadeInLeftBig',
-    'fadeInRight',
-    'fadeInRightBig',
-    'fadeInUp',
-    'fadeInUpBig',
-    'flip',
-    'flipInX',
-    'flipInY',
-    'lightSpeedIn',
-    'rotateIn',
-    'rotateInDownLeft',
-    'rotateInDownRight',
-    'rotateInUpLeft',
-    'rotateInUpRight',
-    'slideInUp',
-    'slideInDown',
-    'slideInLeft',
-    'slideInRight',
-    'zoomIn',
-    'zoomInDown',
-    'zoomInLeft',
-    'zoomInRight',
-    'zoomInUp',
-    'jackInTheBox',
-    'rollIn',
-  ],
+  isLogin: false,
 
 
-  animateLeaveArr: [
-    'MyAnimateOut',
-    'bounceOut',
-    'bounceOutDown',
-    'bounceOutLeft',
-    'bounceOutRight',
-    'bounceOutUp',
-    'fadeOut',
-    'fadeOutDown',
-    'fadeOutDownBig',
-    'fadeOutLeft',
-    'fadeOutLeftBig',
-    'fadeOutRight',
-    'fadeOutRightBig',
-    'fadeOutUp',
-    'fadeOutUpBig',
-    'flip',
-    'flipOutX',
-    'flipOutY',
-    'lightSpeedOut',
-    'rotateOut',
-    'rotateOutDownLeft',
-    'rotateOutDownRight',
-    'rotateOutUpLeft',
-    'rotateOutUpRight',
-    'slideOutUp',
-    'slideOutDown',
-    'slideOutLeft',
-    'slideOutRight',
-    'zoomOut',
-    'zoomOutDown',
-    'zoomOutLeft',
-    'zoomOutRight',
-    'zoomOutUp',
-    'hinge',
-    'rollOut',
-  ]
+
 }
 
 

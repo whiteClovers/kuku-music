@@ -4,7 +4,9 @@
     <Row>
       <Col span="16" offset="4">
         <MenuItem name="1">
+          <router-link tag="span" to="/">
           <h1> Kuku </h1>
+          </router-link>
         </MenuItem>
         <MenuItem name="2">
           <Icon type="ios-people"/>
@@ -74,9 +76,15 @@
               </DropdownItem>
             </div>
             <div v-if="this.$store.state.curUser!=null">
-              <DropdownItem><div @click="toMusicList">我的主页</div></DropdownItem>
-              <DropdownItem><div @click="toMySet">个人设置</div></DropdownItem>
-              <DropdownItem><div @click="validateUser">注销</div></DropdownItem>
+              <DropdownItem>
+                <div @click="toMusicList">我的主页</div>
+              </DropdownItem>
+              <DropdownItem>
+                <div @click="toMySet">个人设置</div>
+              </DropdownItem>
+              <DropdownItem>
+                <div @click="validateUser">注销</div>
+              </DropdownItem>
             </div>
 
           </DropdownMenu>
@@ -84,60 +92,60 @@
 
 
         <Modal
-        v-model="loginModal"
-        :footer-hide="true"
-        class-name="vertical-center-modal"
+          v-model="loginModal"
+          :footer-hide="true"
+          class-name="vertical-center-modal"
 
         >
-        <p slot="header" style="text-align:center">
-          <Avatar icon="ios-person" size="small"/>
-          <span>登录</span>
-        </p>
-        <div style="height: 185px">
-          <Form ref="formInline" :model="formInline" :rules="ruleInline">
-            <FormItem prop="user" style="padding: 10px">
-              <Input type="text" v-model="formInline.user" placeholder="手机号">
-              <Icon type="ios-person-outline" slot="prepend"></Icon>
-              </Input>
-            </FormItem>
-            <FormItem prop="password" style="padding: 10px">
-              <Input type="password" v-model="formInline.password" placeholder="密码">
-              <Icon type="ios-lock-outline" slot="prepend"></Icon>
-              </Input>
-            </FormItem>
-            <FormItem style="float: right">
-              <Button type="primary" @click="handleLoginSubmit('formInline')">登录</Button>
-            </FormItem>
-          </Form>
-        </div>
-      </Modal>
+          <p slot="header" style="text-align:center">
+            <Avatar icon="ios-person" size="small"/>
+            <span>登录</span>
+          </p>
+          <div style="height: 185px">
+            <Form ref="formInline" :model="formInline" :rules="ruleInline">
+              <FormItem prop="user" style="padding: 10px">
+                <Input type="text" v-model="formInline.user" placeholder="手机号">
+                <Icon type="ios-person-outline" slot="prepend"></Icon>
+                </Input>
+              </FormItem>
+              <FormItem prop="password" style="padding: 10px">
+                <Input type="password" v-model="formInline.password" placeholder="密码">
+                <Icon type="ios-lock-outline" slot="prepend"></Icon>
+                </Input>
+              </FormItem>
+              <FormItem style="float: right">
+                <Button type="primary" @click="handleLoginSubmit('formInline')">登录</Button>
+              </FormItem>
+            </Form>
+          </div>
+        </Modal>
 
-      <Modal
-        v-model="registerModel"
-        :footer-hide="true"
-        class-name="vertical-center-modal">
-        <p slot="header" style="text-align:center">
-          <Avatar icon="ios-person" size="small"/>
-          <span>注册</span>
-        </p>
-        <div style="height: 185px">
-          <Form ref="formInline" :model="formInline" :rules="ruleInline">
-            <FormItem prop="user" style="padding: 10px">
-              <Input type="text" v-model="formInline.user" placeholder="手机号">
-              <Icon type="ios-person-outline" slot="prepend"></Icon>
-              </Input>
-            </FormItem>
-            <FormItem prop="password" style="padding: 10px">
-              <Input type="password" v-model="formInline.password" placeholder="密码">
-              <Icon type="ios-lock-outline" slot="prepend"></Icon>
-              </Input>
-            </FormItem>
-            <FormItem style="float: right">
-              <Button type="primary" @click="handleRegisterSubmit('formInline')">注册</Button>
-            </FormItem>
-          </Form>
-        </div>
-      </Modal>
+        <Modal
+          v-model="registerModel"
+          :footer-hide="true"
+          class-name="vertical-center-modal">
+          <p slot="header" style="text-align:center">
+            <Avatar icon="ios-person" size="small"/>
+            <span>注册</span>
+          </p>
+          <div style="height: 185px">
+            <Form ref="formInline" :model="formInline" :rules="ruleInline">
+              <FormItem prop="user" style="padding: 10px">
+                <Input type="text" v-model="formInline.user" placeholder="手机号">
+                <Icon type="ios-person-outline" slot="prepend"></Icon>
+                </Input>
+              </FormItem>
+              <FormItem prop="password" style="padding: 10px">
+                <Input type="password" v-model="formInline.password" placeholder="密码">
+                <Icon type="ios-lock-outline" slot="prepend"></Icon>
+                </Input>
+              </FormItem>
+              <FormItem style="float: right">
+                <Button type="primary" @click="handleRegisterSubmit('formInline')">注册</Button>
+              </FormItem>
+            </Form>
+          </div>
+        </Modal>
 
 
       </Col>
@@ -166,7 +174,7 @@
         ruleInline: {
           user: [
             // {required: true, message: '请填写手机号', trigger: 'blur'},
-            { min: 11, max: 11, message: '手机号长度为11位', trigger: ''}
+            {min: 11, max: 11, message: '手机号长度为11位', trigger: ''}
           ],
           password: [
             // {required: true, message: '请填写密码', trigger: 'blur'},
@@ -178,7 +186,7 @@
     },
     methods: {
       ...mapMutations([
-        'changeLoginModal',
+        'userLoginFlag',
         'userLogin',
         'userLogOut'
       ]),
@@ -227,6 +235,7 @@
             this.loginState = false
             this.userLogin(this.curloginUser, null, this.loginState);
             this.loginAvatar = this.curloginUser.pic
+            this.userLoginFlag(true)
 
             this.$Notice.success({
               title: this.curloginUser.name,
@@ -248,7 +257,7 @@
           this.userLogOut();
           this.loginState = false
           console.log(this.$store.state.curUser)
-
+          this.userLoginFlag(false)
           this.$router.push({path: '/'})
         })
 

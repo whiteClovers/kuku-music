@@ -12,6 +12,9 @@ export default {
     sessionStorage.setItem('token', _token)
     state.token = _token
   },
+  userLoginFlag(state, _flag) {
+    state.isLogin = _flag
+  },
   userLogOut() {
     console.log('1'+sessionStorage.getItem("curUser"))
     sessionStorage.removeItem('curUser')

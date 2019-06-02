@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!--navbar-->
+    <!--<navbar/>-->
     <!--轮播-->
     <carousel/>
 
@@ -8,24 +8,27 @@
 
     <hot-music/>
 
-    <!--<MyFooter/>-->
 
   </div>
 </template>
 <script>
+  import Navbar from './components/Navbar'
   import Carousel from './components/Carousel'
   import HotMusic from './components/HotMusic'
   import HotMusicList from './components/HotMusicList'
   import RecommentMusic from './components/RecommentMusic'
   import User from './components/User'
+  import MyFooter from './components/MyFooter'
 
   export default {
     components: {
+      Navbar,
       Carousel,
       HotMusic,
       HotMusicList,
       User,
       RecommentMusic,
+      MyFooter
     },
     data() {
       return {}
