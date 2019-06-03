@@ -17,7 +17,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Transactional
 public class UserServiceImpl implements UserService {
 
-    private final static int startId = 100;
+    private final static int startId = 1000;
     private AtomicInteger insertId = new AtomicInteger(startId);
 
 //    private char[] charName = {1,2,3,4,5,6,7,8,9,a,b,c,d,e,f,g,h,i,j,k,l,m,n};
@@ -43,6 +43,7 @@ public class UserServiceImpl implements UserService {
         user.setUserNickname(defaultNickName);
         user.setUserId(insertId.incrementAndGet());
         user.setRegTime(new Date());
+        user.setPic("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1898355974,3164166457&fm=26&gp=0.jpg");
 
         System.out.println("service user: "+user);
         return userMapper.insert(user);

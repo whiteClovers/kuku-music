@@ -5,7 +5,7 @@
     <router-view/>
     <BackTop></BackTop>
 
-    <MyFooter/>
+    <!--<MyFooter/>-->
   </div>
 </template>
 
